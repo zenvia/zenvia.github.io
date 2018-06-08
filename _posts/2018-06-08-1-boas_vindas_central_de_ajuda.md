@@ -5,8 +5,6 @@ description:
 categories: docs
 ---
 
-#Central de Ajuda da ZCC
-
 Olá, seja bem-vindo à Central de Ajuda da **Zenvia Conversational Cloud**, a **ZCC**.
 
 Para começar a criar seus próprios chatbots na plataforma, recomendamos que leia os tópicos a seguir:
@@ -21,4 +19,4 @@ Divirta-se e coloque seus projetos em prática na **ZCC**!
 
 
 
-##Keywords: boas vindas; acessando a zcc; painel de controle; chatbots; relatórios; integrações
+## Keywords: boas vindas; acessando a zcc; painel de controle; chatbots; relatórios; integrações
