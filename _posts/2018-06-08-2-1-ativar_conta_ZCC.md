@@ -5,8 +5,6 @@ description:
 categories: docs
 ---
 
-#Como ativo minha conta na plataforma de chatbots da Zenvia (ZCC)?
-
 Assim que a conta é criada, você irá receber um e-mail de ativação de conta, como na imagem a seguir:
 
 ![Wizard - Passo 1](https://raw.githubusercontent.com/zenvia/zenvia.github.io/master/assets/img/wizard/imagem1.png)
@@ -16,4 +14,4 @@ Assim que a conta é criada, você irá receber um e-mail de ativação de conta
 Se você tem dúvida de como acessar sua conta (fazer login), [clique aqui](https://www.loginnazcc.com).
 
 
-##Keywords: ativar a conta; acesso; acesso à plataforma
+## Keywords: ativar a conta; acesso; acesso à plataforma

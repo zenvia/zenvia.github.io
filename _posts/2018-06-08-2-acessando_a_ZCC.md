@@ -1,4 +1,9 @@
-#Acessando a ZCC
+---
+layout: documentation
+title: Acessando a ZCC?
+description: 
+categories: docs
+---
 
 O primeiro passo para começar a usar a **ZCC**, é acessar a conta. Aqui, você tem todos os passos para o acesso e ajuda com sua senha:
 
@@ -11,4 +16,4 @@ Você também pode conhecer melhor o [Painel de Controle](https://www.google.com
 
 
 
-##Keywords: acessando a zcc; login na zcc; alteração de senha; recuperação de senha
+## Keywords: acessando a zcc; login na zcc; alteração de senha; recuperação de senha
