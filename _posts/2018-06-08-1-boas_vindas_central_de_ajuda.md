@@ -1,3 +1,10 @@
+---
+layout: documentation
+title: Central de Ajuda da ZCC
+description: 
+categories: docs
+---
+
 #Central de Ajuda da ZCC
 
 Olá, seja bem-vindo à Central de Ajuda da **Zenvia Conversational Cloud**, a **ZCC**.
