@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -18,22 +18,26 @@
     {% include navbar.ext %}
   </div>
 
-  <div class="hero is-bold is-primary is-small">
+  <section class="hero is-primary is-bold">
     <div class="hero-body">
-      <div class="container">
-        <!-- <h1 class="subtitle is-4">{{ page.title }}</h1> -->
+      <div class="container is-fluid has-text-centered">
+        <h1 class="title is-2 is-spaced">Documentação</h1>
+        <h2 class="subtitle">Central de ajuda da Plataforma Zenvia Conversations Cloud</h2>
       </div>
     </div>
-  </div>
-
-  <div class="container">
-    <!-- <a href="../.gitignore">&laquo; Voltar</a> -->
-    <h6 class="mt-32 has-text-small"><a href="..">&laquo; Voltar</a></h6>
-    <h1 class="subtitle is-3">{{ page.title }}</h1>
-    <div class="content mt-32">
-      {{ content }}
+  </section>
+  <section class="section">
+    <div class="container">
+      <!-- <a href="../.gitignore">&laquo; Voltar</a> -->
+      {% if page.title != 'Índice' %}
+      <a class="has-text-small" href="/docs">&laquo; Voltar</a>
+      {% endif %}
+      <h1 class="subtitle is-3">{{ page.title }}</h1>
+      <div class="content mt-32">
+        {{ content }}
+      </div>
     </div>
-  </div>
+  </section>
 
   <div class="mt-40">
     {% include footer.ext %}
