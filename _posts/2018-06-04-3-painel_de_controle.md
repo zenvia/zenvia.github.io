@@ -18,8 +18,7 @@ No menu superior é possível configurar e visualizar:
 
 Se você quer apenas sair (fazer logoff) da **ZCC**, basta clicar no botão _Sair_, no menu lateral.
 
-Sair_da_conta.gif
-![Wizard - Passo 1](https://raw.githubusercontent.com/zenvia/zenvia.github.io/master/assets/img/wizard/imagem1.png)
+![Wizard - Passo 1](https://github.com/FlavioBarboni/zenvia.github.io/blob/master/Sair_da_conta.gif)
 
 
 
