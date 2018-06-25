@@ -37,4 +37,4 @@ No trecho do código:
 
 
 Abaixo você pode ver um exemplo de Embedded Chatweb usando as configurações padrão:
-<iframe width="100%" height="355" src="/assets/html/chat-embedded/default-config.html" frameborder="0"></iframe>
+<iframe width="100%" height="355" src="/zenvia.github.io/assets/html/chat-embedded/default-config.html" frameborder="0"></iframe>
