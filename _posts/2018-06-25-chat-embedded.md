@@ -10,12 +10,12 @@ categories: docs
   {
     width: 100%;
     height: 355px;
-    border: 5px solid black;
+    border: 5px dashed black;
   }
   
 </style>
 
-O Chatweb da [ZCC](../docs) também pode ser utilizado integrado em seu site.
+O Chatweb da [ZCC](../) também pode ser utilizado integrado em seu site.
 Existem várias configurações e possibilidades de uso, mas a integração mais básica pode
 ser feita assim:
 
