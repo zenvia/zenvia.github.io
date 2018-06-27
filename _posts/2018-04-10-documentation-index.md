@@ -8,7 +8,7 @@ permalink: docs
 ---
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
     {% if post.title != 'Índice' %}
       <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}    
