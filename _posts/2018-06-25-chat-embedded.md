@@ -47,5 +47,5 @@ No trecho do código:
 
 
 Abaixo você pode ver um [exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}):
-<iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}></iframe>
+<iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}"></iframe>
 
