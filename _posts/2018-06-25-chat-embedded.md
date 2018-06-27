@@ -12,7 +12,6 @@ categories: docs
     height: 355px;
     border: 5px dashed black;
   }
-
 </style>
 
 O Chatweb da [ZCC](../) também pode ser utilizado integrado em seu site.
@@ -46,5 +45,7 @@ No trecho do código:
 É necessário que seja utilizado um id válido de Chatweb, o qual pode ser obtido na lista de integrações.
 
 
+
 Abaixo você pode ver um exemplo de Embedded Chatweb usando as configurações padrão:
-<iframe src="/zenvia.github.io/assets/html/chat-embedded/default-config.html"></iframe>
+<iframe src="{{ site.url }}/html/chat-embedded/default-config.html"></iframe>
+
