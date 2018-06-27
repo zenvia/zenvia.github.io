@@ -22,7 +22,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: 
 url:
 permalink: /:categories/:title/
-# twitter_username: jekyllrb
 social:
   github:
   email:
