@@ -46,6 +46,6 @@ No trecho do código:
 
 
 
-Abaixo você pode ver um exemplo de Embedded Chatweb usando as configurações padrão:
+Abaixo você pode ver um exemplo de Embedded Chatweb usando as configurações padrão (o qual pode ser acessado [aqui]({{ site.url }}/html/chat-embedded/default-config.html)):
 <iframe src="{{ site.url }}/html/chat-embedded/default-config.html"></iframe>
 
