@@ -18,7 +18,7 @@ O Chatweb da [ZCC](../) também pode ser utilizado integrado em seu site.
 Existem várias configurações e possibilidades de uso, mas a integração mais básica pode
 ser feita assim:
 
-~~~ HTML
+```html
 <html>
   <head>
     <title>Meu site de exemplo</title>
@@ -35,13 +35,13 @@ ser feita assim:
     <!-- Fim do código do chat -->
   </body>
 </html>
-~~~
+```
 
 
 No trecho do código:
-~~~ JavaScript
+```javascript
 'id-do-chat-aqui'
-~~~
+```
 É necessário que seja utilizado um id válido de Chatweb, o qual pode ser obtido na lista de integrações.
 
 
