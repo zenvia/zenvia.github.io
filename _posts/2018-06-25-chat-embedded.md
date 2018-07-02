@@ -27,7 +27,7 @@ categories: docs
     margin: auto;
     text-align: left;
   }
-  img
+  section img
   {
     border: 3px solid #808080;
   }
@@ -98,6 +98,9 @@ Os seguintes métodos estão disponível pra uso:
 * close(): fecha a [janela do chatweb](#janela-do-chatweb) do Chatweb.
 * toggle(): abre ou fecha a [janela do chatweb](#janela-do-chatweb) do Chatweb de acordo com seu estado atual.
 <br />
+
+Um exemplo de uso pode ser visto em [data-embedded="buttonless"](#buttonless).
+<br />
 <br />
 
 ## Configurações
@@ -106,7 +109,9 @@ Existem algumas configurações que podem ser realizadas através de atributos d
 * [data-button](#data-button): texto do botão de iniciar o chat.
 * [data-message](#data-message): mensagem em um balão convidando a iniciar o chat.
 * [data-format](#data-format): formato da mensagem usada pra iniciar um bot.
-* [data-color](#data-color)
+* [data-color](#data-color): altera a cor do [botão flutuante](#botão-flutuante).
+* [data-width](#data-width): altera a largura da [janela do chatweb](#janela-do-chatweb).
+* [data-height](#data-height): altera a altura da [janela do chatweb](#janela-do-chatweb).
 
 ### data-embedded
 Controla o tipo de Chatweb embedded que será utilizado. O valor padrão é, *button+keyword*, mas será alterado para *button*.
@@ -149,7 +154,7 @@ As opções são:
 </div>
 
 * *buttonless*: Não cria o botão flutuante. O site precisa chamar o [javascript](#javascript) de abertura da janela em algum item de seu site.
-<br />
+<br id="buttonless" />
 #### [Exemplo de Embedded Chatweb usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}):
 
 ```html
