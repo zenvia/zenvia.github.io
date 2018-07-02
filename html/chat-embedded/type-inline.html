@@ -3,79 +3,21 @@
   <head>
       <meta charset="UTF-8">
       <title>Embedded Chatweb - Inline</title>
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-      <link rel="icon" type="image/x-icon" href="./favicon.ico">
-      <link rel="canonical" href="https://rafael-org.github.io/zenvia.github.io/" />
-      <link rel="alternate" type="application/rss+xml" title="Zenvia" href="/zenvia.github.io/feed.xml" />
-
       <link rel="stylesheet" href="https://uikit.zenvia.com/css/zenvia-ui-kit.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <img class="logo" alt="Zenvia logotipo" src="https://app.zenvia.com/assets/images/logo-novo-zenvia.svg">
-          </a>
-          <a href="/zenvia.github.io/" class="navbar-item"></a>
-          <a href="https://facebook.com/ZenviaMobile" class="navbar-item is-hidden-desktop" target="_blank">
-          <span class="icon">
-              <i class="fab fa-facebook"></i>
-          </span>
-          </a>
-          <a href="https://twitter.com/ZenviaMobile" class="navbar-item is-hidden-desktop" target="_blank">
-            <span class="icon">
-                <i class="fab fa-twitter"></i>
-            </span>
-          </a>
-          <div class="navbar-burger burger" data-target="navMenubd-main">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div id="navMenubd-main" class="navbar-menu">
-          <div class="navbar-start">
-          </div>
-          <div class="navbar-end">
-            <a href="https://facebook.com/ZenviaMobile" class="navbar-item is-hidden-desktop-only" target="_blank">
-            <span class="icon">
-                <i class="fab fa-facebook"></i>
-            </span>
-            </a>
-            <a href="https://twitter.com/ZenviaMobile" class="navbar-item is-hidden-desktop-only" target="_blank">
-            <span class="icon">
-                <i class="fab fa-twitter"></i>
-            </span>
-            </a>
-            <div class="navbar-item">
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
-        <div class="container is-fluid has-text-centered">
-          <h1 class="title is-2 is-spaced">Zenvia</h1>
-          <h2 class="subtitle">Conheça alguns projetos que contribuímos<br>e que você também pode contribuir.</h2>
-        </div>
-      </div>
-    </section>
     <section class="hero is-white">
       <div class="hero-body">
         <div class="container">
-          <!-- Início do código do chat -->
+          <!-- Inserindo a janela do chat na página -->
           <div class="znv-chat"
             data-embedded="room"
             data-width="500px"
             data-height="250px"
-            style="float: right; margin-left: 10px; border: 5px dashed black;"
+            style="float: right; margin-left: 10px; border: 5px solid black;"
           ></div>
-          <!-- Fim do código do chat -->
+          <!-- Conteúdo da página -->
           <h3 class="title is-4">Sobre nós</h3>
           <div class="content">
             <p>Somos uma empresa que acredita no futuro! Acima de tudo, no futuro das relações entre empresas e clientes.</p>
@@ -85,77 +27,11 @@
         </div>
       </div>
     </section>
-    <!-- Call to action to documentation -->
-    <section class="section">
-      <div class="container has-text-centered">
-        <h3 class="title is-4">Documentação</h3>
-        <p>
-          <a class="button is-primary is-fatty is-large" href="docs">Plataforma ZCC</a>
-        </p>
-      </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-    <script id="repository" type="x-tmpl-mustache">
-      {{=[[ ]]=}}
-      <div class="column is-4">
-        <div class="box has-text-grey">
-          <a href="[[html_url]]" target="_blank" style="text-decoration:none;">
-            <div class="has-text-centered">
-              <span class="icon is-medium"><i class="fab fa-github fa-2x"></i></span>
-              <h3 class="title is-5 has-text-grey">[[name]]</h3>
-              <p>
-                <span class="icon">
-                  <i class="fas fa-star"></i>
-                </span>
-                [[ stargazers_count ]]
-                <span class="icon">
-                  <i class="fas fa-code-branch"></i>
-                </span>
-                [[ forks_count ]]
-              </p>
-              <p class="has-text-small mt-8">[[description]] description</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </script>
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Zenvia</strong> Smart conversations
-          </p>
-          <p>
-            <address class="text-small">
-                São Paulo
-                Av. Paulista, 2300 - 18º andar - conj. 182 e 184
-                Bela Vista - 01310-300
-            </address>
-            <address class="text-small">
-              Porto Alegre
-              Av. Dr. Nilo Peçanha, 2900 - 14º andar
-              Chácara da Pedras - 91330-001
-            </address>
-          </p>
-          <p>
-            <a class="icon is-large" href="https://facebook.com/ZenviaMobile">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a class="icon is-large" href="https://twitter.com/ZenviaMobile">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-    </footer>
-    
     <!-- Início do código do chat -->
     <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
     <script>
         new ZenviaChat('85b287488b82d36ca599382fd36c2695').build();
     </script>
     <!-- Fim do código do chat -->
-
   </body>
 </html>
