@@ -36,8 +36,16 @@ categories: docs
 ## Índice
 * [Introdução](#introdução)
 * [Glossário](#glossário)
+* [JavaScript](#javascript)
 * [Configurações](#configurações)
-* [Exemplos](#exemplos)
+  * [data-embedded](#data-embedded)
+  * [data-button](#data-button)
+  * [data-message](#data-message)
+  * [data-format](#data-format)
+  * [data-color](#data-color)
+  * [data-width](#data-width)
+  * [data-height](#data-height)
+
 <br />
 
 ## Introdução
