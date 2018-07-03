@@ -11,6 +11,11 @@ categories: docs
     width: 75%;
     height: 355px;
     border: 5px dashed #808080;
+    overflow: hidden;
+  }
+  iframe body
+  {
+    overflow: hidden;
   }
   .center
   {
@@ -77,7 +82,7 @@ No trecho do código:
 é necessário que seja utilizado um id válido de Chatweb, o qual pode ser obtido
 na lista de integrações.
 <br />
-Um exemplo de Chatweb Embedded usando as configurações acima por ser visto abaixo.
+Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto abaixo.
 #### [Exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}):
 <div class="center">
   <iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}"></iframe>
@@ -102,9 +107,9 @@ Os *"componentes"* do Chatweb Embedded são:
 Alguns métodos são disponibilizados para permitir o controle e uso do Chatweb por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
 
 Os seguintes métodos estão disponível pra uso:
-* open(): abre a [janela do chatweb](#janela-do-chatweb) do Chatweb.
-* close(): fecha a [janela do chatweb](#janela-do-chatweb) do Chatweb.
-* toggle(): abre ou fecha a [janela do chatweb](#janela-do-chatweb) do Chatweb de acordo com seu estado atual.
+* open(): abre a [janela do Chatweb](#janela-do-chatweb).
+* close(): fecha a [janela do Chatweb](#janela-do-chatweb).
+* toggle(): abre ou fecha a [janela do Chatweb](#janela-do-chatweb) de acordo com seu estado atual.
 <br />
 
 Um exemplo de uso pode ser visto em [data-embedded="buttonless"](#buttonless).
@@ -166,7 +171,7 @@ As opções são:
 #### [Exemplo de Embedded Chatweb usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}):
 
 ```html
-<iframe src="../sample.html" width="100%" height="100%" frameborder="0"></iframe>
+<iframe src="../sample.html"></iframe>
 <!-- Início do código do chat -->
 <div class="znv-chat"
   data-embedded="buttonless"
