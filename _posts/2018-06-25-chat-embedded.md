@@ -85,7 +85,7 @@ na lista de integrações.
 Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto abaixo.
 #### [Exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}):
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 <br />
 <br />
@@ -145,7 +145,7 @@ As opções são:
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/type-button.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/type-button.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 
 * *button+keyword*: Quando clica no [botão flutuante](#botão-flutuante), exibe o [botão de início](#botão-de-início), daí uma vez clicado, exibe a [janela do chatweb](#janela-do-chatweb).
@@ -163,7 +163,7 @@ As opções são:
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 
 * *buttonless*: Não cria o botão flutuante. O site precisa chamar o [javascript](#javascript) de abertura da janela em algum item de seu site.
@@ -189,7 +189,7 @@ As opções são:
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 
 * *room*: Cria a [janela do chatweb](#janela-do-chatweb) logo de início, e sem ser flutuante, de forma *inline*. Seu objetivo é permitir integrar o Chatweb em elementos do site.
@@ -226,7 +226,7 @@ As opções são:
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/type-inline.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/type-inline.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 <br />
 
@@ -247,7 +247,7 @@ O valor padrão é: *Começar*
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/config-keyword.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/config-keyword.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 <br />
 
@@ -271,7 +271,7 @@ Não tem valor padrão.
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/type-button+message.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/type-button+message.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 <br />
 
@@ -302,7 +302,7 @@ O valor padrão é: *#333*.
 ```
 <br />
 <div class="center">
-  <iframe src="{{ '/html/chat-embedded/config-color.html' | absolute_url }}"></iframe>
+  <iframe src="{{ '/html/chat-embedded/config-color.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 <br />
 
