@@ -9,7 +9,7 @@ categories: docs
   iframe
   {
     width: 75%;
-    height: 355px;
+    height: 600px;
     border: 5px dashed #808080;
     overflow: hidden;
   }
@@ -187,13 +187,13 @@ As opções são:
 ></div>
 <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
 <script>
-    var zenvia_chat = new ZenviaChat('85b287488b82d36ca599382fd36c2695').build();
+    var zchat = new ZenviaChat('85b287488b82d36ca599382fd36c2695').build();
 </script>
 <!-- Fim do código do chat -->
 <div class="example">
-  <input type="button" value="open()" onclick="zenvia_chat.open()" />
-  <input type="button" value="close()" onclick="zenvia_chat.close()" />
-  <input type="button" value="toggle()" onclick="zenvia_chat.toggle()" />
+  <input type="button" value="open()" onclick="zchat.open()" />
+  <input type="button" value="close()" onclick="zchat.close()" />
+  <input type="button" value="toggle()" onclick="zchat.toggle()" />
 </div>
 ```
 <br />
@@ -213,7 +213,7 @@ As opções são:
       <div class="znv-chat"
         data-embedded="room"
         data-width="500px"
-        data-height="250px"
+        data-height="500px"
         style="float: right; margin-left: 10px; border: 5px solid black;"
       ></div>
       <!-- Conteúdo da página -->
