@@ -1,0 +1,40 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Embedded Chatweb - Javascript (buttonless)</title>
+      <style>
+        body
+        {
+          margin: 0px;
+          overflow: hidden;
+        }
+        .example
+        {
+          position: absolute;
+          top: 100px;
+          left: 25px;
+          z-index: 1000;
+          border: 3px solid red;
+          padding: 5px;
+          background-color: yellow;
+        }
+      </style>
+  </head>
+  <body>
+    <iframe src="../sample.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    <!-- Início do código do chat -->
+    <div class="znv-chat"
+      data-embedded="buttonless"
+    ></div>
+    <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
+    <script>
+        var zchat = new ZenviaChat('85b287488b82d36ca599382fd36c2695', false).build();
+    </script>
+    <!-- Fim do código do chat -->
+    <div class="example">
+      <input type="button" value="open()" onclick="zchat.open()" />
+      <input type="button" value="close()" onclick="zchat.close()" />
+      <input type="button" value="toggle()" onclick="zchat.toggle()" />
+    </div>
+  </body>
+</html>

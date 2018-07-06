@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Embedded Chatweb - Inline</title>
+      <link rel="stylesheet" href="https://uikit.zenvia.com/css/zenvia-ui-kit.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+      <style>
+          body
+          {
+            overflow: hidden;
+          }
+      </style>
+  </head>
+  <body>
+    <section class="hero is-white">
+      <div class="hero-body">
+        <div class="container">
+          <!-- Inserindo a janela do chat na página -->
+          <div class="znv-chat"
+            data-embedded="room"
+            data-width="500px"
+            data-height="500px"
+            style="float: right; margin-left: 10px; border: 5px solid black;"
+          ></div>
+          <!-- Conteúdo da página -->
+          <h3 class="title is-4">Sobre nós</h3>
+          <div class="content">
+            <p>Somos uma empresa que acredita no futuro! Acima de tudo, no futuro das relações entre empresas e clientes.</p>
+            <p> Com uma história de mais de 14 anos e a liderança em mobilidade corporativa no Brasil, oferecemos soluções capazes de fazer com que os clientes percebam os processos de negócio das empresas como experiências ricas em significado e valor.</p>
+            <p>Vem simplificar o mundo com a gente!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Início do código do chat -->
+    <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
+    <script>
+        new ZenviaChat('85b287488b82d36ca599382fd36c2695', false).build();
+    </script>
+    <!-- Fim do código do chat -->
+  </body>
+</html>
