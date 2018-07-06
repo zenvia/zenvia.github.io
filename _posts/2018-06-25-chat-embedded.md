@@ -340,8 +340,17 @@ Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 
 ###### Domínios:
 Existem diversas opções de domínio que podem ser usados para esse propósito.
-Futuramente essa documentação será com uma lista completa.
+Segue algumas delas:
+* fale.chat
+* sac.chat
+* pesquisa.chat
+* zenvia.chat
+
+E opções com suporte a *https:*
+* seuchat.com
 * chat.zenvia.com
+* chatbot.zenvia.com
+* m.chatbot.zenvia.com
 <br />
 <br />
 
