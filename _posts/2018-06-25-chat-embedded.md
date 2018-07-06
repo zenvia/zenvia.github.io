@@ -346,7 +346,7 @@ Segue algumas delas:
 * pesquisa.chat
 * zenvia.chat
 
-E opções com suporte a *https:*
+E algumas opções com suporte a *https*:
 * seuchat.com
 * chat.zenvia.com
 * chatbot.zenvia.com
