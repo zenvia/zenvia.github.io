@@ -84,7 +84,7 @@ No trecho do código:
 é necessário que seja utilizado um [id válido de Chatweb](#chat-id).
 <br />
 Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto abaixo.
-#### [Exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}){:target="_blank"}:
 <div class="center">
   <iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
@@ -141,7 +141,7 @@ Controla o tipo de Chatweb embedded que será utilizado. O valor padrão é, *bu
 As opções são:
 * *button*: Quando clica no [botão flutuante](#botão-flutuante), abre diretamente a [janela do chatweb](#janela-do-chatweb), sem exibir o [botão de início](#botão-de-início) ou a [mensagem de boas-vindas](#mensagem-de-boas-vindas).
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="button"]({{ '/html/chat-embedded/type-button.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-embedded="button"]({{ '/html/chat-embedded/type-button.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -159,7 +159,7 @@ As opções são:
 
 * *button+keyword*: Quando clica no [botão flutuante](#botão-flutuante), exibe o [botão de início](#botão-de-início), daí uma vez clicado, exibe a [janela do chatweb](#janela-do-chatweb).
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="button+keyword"]({{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-embedded="button+keyword"]({{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -177,7 +177,7 @@ As opções são:
 <br id="buttonless" />
 * *buttonless*: Não cria o botão flutuante. O site precisa chamar o [javascript](#javascript) de abertura da janela em algum item de seu site.
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <iframe src="../sample.html"></iframe>
@@ -203,7 +203,7 @@ As opções são:
 
 * *room*: Cria a [janela do chatweb](#janela-do-chatweb) logo de início, e sem ser flutuante, de forma *inline*. Seu objetivo é permitir integrar o Chatweb em elementos do site.
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="room"]({{ '/html/chat-embedded/type-inline.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-embedded="room"]({{ '/html/chat-embedded/type-inline.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <section class="hero is-white">
@@ -245,7 +245,7 @@ mensagem que é gerada para iniciar o *bot* caso a sala do chat não esteja aind
 inicializada.
 
 O valor padrão é: *Começar*
-#### [Exemplo de Embedded Chatweb usando data-button="Olá"]({{ '/html/chat-embedded/config-keyword.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-button="Olá"]({{ '/html/chat-embedded/config-keyword.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -269,7 +269,7 @@ acima do [botão flutuante](#botão-flutuante).
 Quando utilizada, o balão é carregado já aberto quando o site carrega.
 
 Não tem valor padrão.
-#### [Exemplo de Embedded Chatweb usando data-message]({{ '/html/chat-embedded/type-button+message.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-message]({{ '/html/chat-embedded/type-button+message.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -300,7 +300,7 @@ O valor padrão é *json*, exceto quando o [data-embedded](#data-embedded) é co
 Define a cor do [botão flutuante](#botão-flutuante).
 
 O valor padrão é: *#333*.
-#### [Exemplo de Embedded Chatweb usando data-color="#FF7F00"]({{ '/html/chat-embedded/config-color.html' | absolute_url }}):
+#### [Exemplo de Embedded Chatweb usando data-color="#FF7F00"]({{ '/html/chat-embedded/config-color.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
