@@ -93,13 +93,13 @@ Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto ab
 
 ## Glossário
 Os *"componentes"* do Chatweb Embedded são:
-* *Botão flutuante*<br />
+* *Botão flutuante*<br id="botão-flutuante"/>
 ![Botão flutuante]({{ '/assets/img/chat-embedded/botao-flutuante.png' | absolute_url }})
 * *Botão de início* e *mensagem de boas-vindas*<br />
 ![Botão de início]({{ '/assets/img/chat-embedded/botao-iniciar.png' | absolute_url }})
 &nbsp;&nbsp;
 ![Mensagem de boas-vindas]({{ '/assets/img/chat-embedded/botao-iniciar-mensagem.png' | absolute_url}})
-* *Janela do Chatweb*<br />
+* *Janela do Chatweb*<br id="janela-do-chatweb" />
 ![Janela do Chatweb]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
 <br id="chat-id" />
 * *Chat id*<br />
