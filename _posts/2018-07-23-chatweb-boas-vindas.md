@@ -49,7 +49,7 @@ categories: docs
 
 A mensagem de boas vindas é a primeira mensagem que será exibida para o usuário, ou seja,
 será exibida quando o usuário abrir o Chatweb da [**Plataforma de Chatbots Zenvia**](../)
-[integrado em seu site](chat-embedded) conforme a mensagem abaixo.
+[integrado em seu site](../chat-embedded) conforme a mensagem abaixo.
 
 <div class="center">
   <iframe src="{{ '/html/chatweb-boas-vindas/type-button.html' | absolute_url }}" scrolling="no"></iframe>
