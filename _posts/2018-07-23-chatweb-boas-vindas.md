@@ -48,7 +48,7 @@ categories: docs
 ## Chatbot
 
 A mensagem de boas vindas é a primeira mensagem que será exibida para o usuário, ou seja,
-será exibida quando o usuário abrir o Chatweb da [**ZCC**](../)
+será exibida quando o usuário abrir o Chatweb da [**Plataforma de Chatbots Zenvia**](../)
 [integrado em seu site](chat-embedded) conforme a mensagem abaixo.
 
 <div class="center">
