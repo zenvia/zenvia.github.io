@@ -50,6 +50,7 @@ categories: docs
   * [data-color](#data-color)
   * [data-width](#data-width)
   * [data-height](#data-height)
+  * [data-uid](#data-uid)
 * [Integrações alternativas](#integrações-alternativas)
   * [Link/URL](#linkurl)
 
@@ -134,6 +135,7 @@ Existem algumas configurações que podem ser realizadas através de atributos d
 * [data-color](#data-color): altera a cor do [botão flutuante](#botão-flutuante).
 * [data-width](#data-width): altera a largura da [janela do chatweb](#janela-do-chatweb).
 * [data-height](#data-height): altera a altura da [janela do chatweb](#janela-do-chatweb).
+* [data-uid](#data-uid): determina qual o id do usuário.
 
 ### data-embedded
 Controla o tipo de Chatweb embedded que será utilizado. O valor padrão é, *button+keyword*, mas será alterado para *button*.
@@ -328,6 +330,15 @@ Define a *altura* da [janela flutuante](#janela-do-chatweb) do chatweb.
 
 O valor padrão é: *567px*, exceto quando [data-embedded](#data-embedded) é configurado como *room*, aí o valor padrão passa a ser *100%*.
 <br />
+
+### data-uid
+Define o *id* do usuário no chatweb. Juntamente com o [Chat Id](#chat-id), determina o id da conversa.
+
+Por padrão, esse id é gerado aleatoriamente, e armazenado no navegador até que o mesmo
+seja encerrado. Dessa forma, esse id será sempre o mesmo enquanto o usuário não
+fechar o navegador, então mesmo que o usuário saia da página ou abra várias abas,
+a conversa carregada será sempre a mesma.
+<br />
 <br />
 
 ## Integrações alternativas
@@ -365,4 +376,4 @@ ou<br />
 <br />
 
 ###### Exemplos (funcionais):
-[http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695](http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695)<br />
+[http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695](http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695){:target="_blank"}<br />
