@@ -338,6 +338,8 @@ Por padrão, esse id é gerado aleatoriamente, e armazenado no navegador até qu
 seja encerrado. Dessa forma, esse id será sempre o mesmo enquanto o usuário não
 fechar o navegador, então mesmo que o usuário saia da página ou abra várias abas,
 a conversa carregada será sempre a mesma.
+
+Mas também é possível utilizar algum outro identificador, como por exemplo, um e-mail.
 <br />
 <br />
 
@@ -351,17 +353,16 @@ Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 
 ###### Domínios:
 Existem diversas opções de domínio que podem ser usados para esse propósito.
-Segue algumas delas:
-* fale.chat
-* sac.chat
-* pesquisa.chat
+Se algumas delas com suporte a *https*:
 * zenvia.chat
-
-E algumas opções com suporte a *https*:
 * seuchat.com
 * chat.zenvia.com
 * chatbot.zenvia.com
-* m.chatbot.zenvia.com
+
+E mais algumas sem:
+* fale.chat
+* sac.chat
+* pesquisa.chat
 <br />
 <br />
 
