@@ -103,13 +103,12 @@ Os *"componentes"* do Web Chat Embedded são:
 * *Janela do Web Chat*<br id="janela-do-web-chat" />
 ![Janela do Web Chat]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
 <br id="chat-id" />
-* *Chat id*<br />
-O *chat id* é o identificador da *"identidade"* do *bot*, a qual é usada pra determina
+* *Id Web Chat*<br />
+O *Id Web Chat* é o identificador da *"identidade"* do *bot*, a qual é usada pra determina
 inúmeras informações pra uso no Web Chat, como o nome e logo do *bot*, assim como qual
 *bot* será usado para executar a *conversa*.<br />
 <br />
-O *Chat id* pode ser obtido na lista de integrações, disponível no painel de controla
-da ZCC.
+O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel de controle.
 <br />
 <br />
 
@@ -332,7 +331,7 @@ O valor padrão é: *567px*, exceto quando [data-embedded](#data-embedded) é co
 <br />
 
 ### data-uid
-Define o *id* do usuário no Web Chat. Juntamente com o [Chat Id](#chat-id), determina o id da conversa.
+Define o *id* do usuário no Web Chat. Juntamente com o [Id Web Chat](#chat-id), determina o id da conversa.
 
 Por padrão, esse id é gerado aleatoriamente, e armazenado no navegador até que o mesmo
 seja encerrado. Dessa forma, esse id será sempre o mesmo enquanto o usuário não
@@ -345,7 +344,7 @@ Mas também é possível utilizar algum outro identificador, como por exemplo, u
 
 ## Integrações alternativas
 ### Link/URL
-São URLs que quando acessadas, iniciam o *bot* identificado pelo [chat id](#chat-id) utilizado em sua composição.
+São URLs que quando acessadas, iniciam o *bot* identificado pelo [Id Web Chat](#chat-id) utilizado em sua composição.
 
 Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 <br />
@@ -353,26 +352,19 @@ Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 
 ###### Domínios:
 Existem diversas opções de domínio que podem ser usados para esse propósito.
-Se algumas delas com suporte a *https*:
+Seguem algumas delas com suporte a *https*:
 * zenvia.chat
 * seuchat.com
-* chat.zenvia.com
-* chatbot.zenvia.com
-
-E mais algumas sem:
-* fale.chat
-* sac.chat
-* pesquisa.chat
 <br />
 <br />
 
 ###### Composição:
 O URL de redirecionamento a um *bot* possui o seguinte formato:<br />
-*http://\[domínio\]/bot/[\[chat id\]](#chat-id)*<br />
+*http://\[domínio\]/bot/[\[Id Web Chat\]](#chat-id)*<br />
 <br />
 ou<br />
 <br />
-*http://\[domínio\]/bot/[\[chat id\]](#chat-id)/[\[palavra-chave\]](#data-button)*<br />
+*http://\[domínio\]/bot/[\[Id Web Chat\]](#chat-id)/[\[palavra-chave\]](#data-button)*<br />
 <br />
 <br />
 
