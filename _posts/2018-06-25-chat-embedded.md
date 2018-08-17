@@ -82,7 +82,7 @@ pode ser feita assim:
 <br />
 No trecho do código:
 <code class="highlight"><span class="s1">'id-do-chat-aqui'</span></code>
-é necessário que seja utilizado um [id válido de Web Chat](#chat-id).
+é necessário que seja utilizado um [Id válido de Web Chat](#chat-id).
 <br />
 Um exemplo de Web Chat Embedded usando as configurações acima pode ser visto abaixo.
 #### [Exemplo de Web Chat Embedded usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}){:target="_blank"}:
