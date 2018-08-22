@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Integrando o Chatweb da ZCC em seu site
+title: Integrando o Web Chat em seu site
 description: 
 categories: docs
 ---
@@ -50,13 +50,14 @@ categories: docs
   * [data-color](#data-color)
   * [data-width](#data-width)
   * [data-height](#data-height)
+  * [data-uid](#data-uid)
 * [Integrações alternativas](#integrações-alternativas)
   * [Link/URL](#linkurl)
 
 <br />
 
 ## Introdução
-O Chatweb da [ZCC](../) também pode ser utilizado integrado em seu site.
+O Web Chat também pode ser utilizado integrado em seu site.
 Existem várias configurações e possibilidades de uso, mas a integração mais básica
 pode ser feita assim:
 
@@ -81,10 +82,10 @@ pode ser feita assim:
 <br />
 No trecho do código:
 <code class="highlight"><span class="s1">'id-do-chat-aqui'</span></code>
-é necessário que seja utilizado um [id válido de Chatweb](#chat-id).
+é necessário que seja utilizado um [Id válido de Web Chat](#chat-id).
 <br />
-Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto abaixo.
-#### [Exemplo de Embedded Chatweb usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}):
+Um exemplo de Web Chat Embedded usando as configurações acima pode ser visto abaixo.
+#### [Exemplo de Web Chat Embedded usando as configurações padrão]({{ '/html/chat-embedded/default-config.html' | absolute_url }}){:target="_blank"}:
 <div class="center">
   <iframe src="{{ '/html/chat-embedded/default-config.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
@@ -92,33 +93,32 @@ Um exemplo de Chatweb Embedded usando as configurações acima pode ser visto ab
 <br />
 
 ## Glossário
-Os *"componentes"* do Chatweb Embedded são:
-* *Botão flutuante*<br />
+Os *"componentes"* do Web Chat Embedded são:
+* *Botão flutuante*<br id="botão-flutuante"/>
 ![Botão flutuante]({{ '/assets/img/chat-embedded/botao-flutuante.png' | absolute_url }})
 * *Botão de início* e *mensagem de boas-vindas*<br />
 ![Botão de início]({{ '/assets/img/chat-embedded/botao-iniciar.png' | absolute_url }})
 &nbsp;&nbsp;
 ![Mensagem de boas-vindas]({{ '/assets/img/chat-embedded/botao-iniciar-mensagem.png' | absolute_url}})
-* *Janela do Chatweb*<br />
-![Janela do Chatweb]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
+* *Janela do Web Chat*<br id="janela-do-web-chat" />
+![Janela do Web Chat]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
 <br id="chat-id" />
-* *Chat id*<br />
-O *chat id* é o identificador da *"identidade"* do *bot*, a qual é usada pra determina
-inúmeras informações pra uso no Chatweb, como o nome e logo do *bot*, assim como qual
+* *Id Web Chat*<br />
+O *Id Web Chat* é o identificador da *"identidade"* do *bot*, a qual é usada pra determina
+inúmeras informações pra uso no Web Chat, como o nome e logo do *bot*, assim como qual
 *bot* será usado para executar a *conversa*.<br />
 <br />
-O *Chat id* pode ser obtido na lista de integrações, disponível no painel de controla
-da ZCC.
+O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel de controle.
 <br />
 <br />
 
 ## JavaScript
-Alguns métodos são disponibilizados para permitir o controle e uso do Chatweb por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
+Alguns métodos são disponibilizados para permitir o controle e uso do Web Chat por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
 
 Os seguintes métodos estão disponível pra uso:
-* *open()*: abre a [janela do Chatweb](#janela-do-chatweb).
-* *close()*: fecha a [janela do Chatweb](#janela-do-chatweb).
-* *toggle()*: abre ou fecha a [janela do Chatweb](#janela-do-chatweb) de acordo com seu estado atual.
+* *open()*: abre a [janela do Web Chat](#janela-do-web-chat).
+* *close()*: fecha a [janela do Web Chat](#janela-do-web-chat).
+* *toggle()*: abre ou fecha a [janela do Web Chat](#janela-do-web-chat) de acordo com seu estado atual.
 <br />
 
 Um exemplo de uso pode ser visto em [data-embedded="buttonless"](#buttonless).
@@ -127,21 +127,22 @@ Um exemplo de uso pode ser visto em [data-embedded="buttonless"](#buttonless).
 
 ## Configurações
 Existem algumas configurações que podem ser realizadas através de atributos da <code class="highlight"><span class="nt">div</span> <span class="s">znv-chat</span></code>:
-* [data-embedded](#data-embedded): tipo do Chatweb embedded.
+* [data-embedded](#data-embedded): tipo do Web Chat embedded.
 * [data-button](#data-button): texto do botão de iniciar o chat.
 * [data-message](#data-message): mensagem em um balão convidando a iniciar o chat.
 * [data-format](#data-format): formato da mensagem usada pra iniciar um bot.
 * [data-color](#data-color): altera a cor do [botão flutuante](#botão-flutuante).
-* [data-width](#data-width): altera a largura da [janela do chatweb](#janela-do-chatweb).
-* [data-height](#data-height): altera a altura da [janela do chatweb](#janela-do-chatweb).
+* [data-width](#data-width): altera a largura da [janela do Web Chat](#janela-do-web-chat).
+* [data-height](#data-height): altera a altura da [janela do Web Chat](#janela-do-web-chat).
+* [data-uid](#data-uid): determina qual o id do usuário.
 
 ### data-embedded
-Controla o tipo de Chatweb embedded que será utilizado. O valor padrão é, *button+keyword*, mas será alterado para *button*.
+Controla o tipo de Web Chat embedded que será utilizado. O valor padrão é, *button+keyword*, mas será alterado para *button*.
 
 As opções são:
-* *button*: Quando clica no [botão flutuante](#botão-flutuante), abre diretamente a [janela do chatweb](#janela-do-chatweb), sem exibir o [botão de início](#botão-de-início) ou a [mensagem de boas-vindas](#mensagem-de-boas-vindas).
+* *button*: Quando clica no [botão flutuante](#botão-flutuante), abre diretamente a [janela do Web Chat](#janela-do-web-chat), sem exibir o [botão de início](#botão-de-início) ou a [mensagem de boas-vindas](#mensagem-de-boas-vindas).
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="button"]({{ '/html/chat-embedded/type-button.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-embedded="button"]({{ '/html/chat-embedded/type-button.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -157,9 +158,9 @@ As opções são:
   <iframe src="{{ '/html/chat-embedded/type-button.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 
-* *button+keyword*: Quando clica no [botão flutuante](#botão-flutuante), exibe o [botão de início](#botão-de-início), daí uma vez clicado, exibe a [janela do chatweb](#janela-do-chatweb).
+* *button+keyword*: Quando clica no [botão flutuante](#botão-flutuante), exibe o [botão de início](#botão-de-início), daí uma vez clicado, exibe a [janela do Web Chat](#janela-do-web-chat).
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="button+keyword"]({{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-embedded="button+keyword"]({{ '/html/chat-embedded/type-button+keyword.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -177,7 +178,7 @@ As opções são:
 <br id="buttonless" />
 * *buttonless*: Não cria o botão flutuante. O site precisa chamar o [javascript](#javascript) de abertura da janela em algum item de seu site.
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}):
+#### [Exemplo de Embedded Web Chat usando data-embedded="buttonless"]({{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <iframe src="../sample.html"></iframe>
@@ -201,9 +202,9 @@ As opções são:
   <iframe src="{{ '/html/chat-embedded/type-buttonless.html' | absolute_url }}" scrolling="no"></iframe>
 </div>
 
-* *room*: Cria a [janela do chatweb](#janela-do-chatweb) logo de início, e sem ser flutuante, de forma *inline*. Seu objetivo é permitir integrar o Chatweb em elementos do site.
+* *room*: Cria a [janela do Web Chat](#janela-do-web-chat) logo de início, e sem ser flutuante, de forma *inline*. Seu objetivo é permitir integrar o Web Chat em elementos do site.
 <br />
-#### [Exemplo de Embedded Chatweb usando data-embedded="room"]({{ '/html/chat-embedded/type-inline.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-embedded="room"]({{ '/html/chat-embedded/type-inline.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <section class="hero is-white">
@@ -245,7 +246,7 @@ mensagem que é gerada para iniciar o *bot* caso a sala do chat não esteja aind
 inicializada.
 
 O valor padrão é: *Começar*
-#### [Exemplo de Embedded Chatweb usando data-button="Olá"]({{ '/html/chat-embedded/config-keyword.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-button="Olá"]({{ '/html/chat-embedded/config-keyword.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -269,7 +270,7 @@ acima do [botão flutuante](#botão-flutuante).
 Quando utilizada, o balão é carregado já aberto quando o site carrega.
 
 Não tem valor padrão.
-#### [Exemplo de Embedded Chatweb usando data-message]({{ '/html/chat-embedded/type-button+message.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-message]({{ '/html/chat-embedded/type-button+message.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -300,7 +301,7 @@ O valor padrão é *json*, exceto quando o [data-embedded](#data-embedded) é co
 Define a cor do [botão flutuante](#botão-flutuante).
 
 O valor padrão é: *#333*.
-#### [Exemplo de Embedded Chatweb usando data-color="#FF7F00"]({{ '/html/chat-embedded/config-color.html' | absolute_url }}):
+#### [Exemplo de Web Chat Embedded usando data-color="#FF7F00"]({{ '/html/chat-embedded/config-color.html' | absolute_url }}){:target="_blank"}:
 
 ```html
 <div class="znv-chat"
@@ -318,21 +319,32 @@ O valor padrão é: *#333*.
 <br />
 
 ### data-width
-Define a *largura* da [janela flutuante](#janela-do-chatweb) do chatweb.
+Define a *largura* da [janela flutuante](#janela-do-web-chat) do Web Chat.
 
 O valor padrão é: *375px*, exceto quando [data-embedded](#data-embedded) é configurado como *room*, aí o valor padrão passa a ser *100%*.
 <br />
 
 ### data-height
-Define a *altura* da [janela flutuante](#janela-do-chatweb) do chatweb.
+Define a *altura* da [janela flutuante](#janela-do-web-chat) do Web Chat.
 
 O valor padrão é: *567px*, exceto quando [data-embedded](#data-embedded) é configurado como *room*, aí o valor padrão passa a ser *100%*.
+<br />
+
+### data-uid
+Define o *id* do usuário no Web Chat. Juntamente com o [Id Web Chat](#chat-id), determina o id da conversa.
+
+Por padrão, esse id é gerado aleatoriamente, e armazenado no navegador até que o mesmo
+seja encerrado. Dessa forma, esse id será sempre o mesmo enquanto o usuário não
+fechar o navegador, então mesmo que o usuário saia da página ou abra várias abas,
+a conversa carregada será sempre a mesma.
+
+Mas também é possível utilizar algum outro identificador, como por exemplo, um e-mail.
 <br />
 <br />
 
 ## Integrações alternativas
 ### Link/URL
-São URLs que quando acessadas, iniciam o *bot* identificado pelo [chat id](#chat-id) utilizado em sua composição.
+São URLs que quando acessadas, iniciam o *bot* identificado pelo [Id Web Chat](#chat-id) utilizado em sua composição.
 
 Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 <br />
@@ -340,20 +352,21 @@ Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 
 ###### Domínios:
 Existem diversas opções de domínio que podem ser usados para esse propósito.
-Futuramente essa documentação será com uma lista completa.
-* chat.zenvia.com
+Seguem algumas delas com suporte a *https*:
+* zenvia.chat
+* seuchat.com
 <br />
 <br />
 
 ###### Composição:
 O URL de redirecionamento a um *bot* possui o seguinte formato:<br />
-*http://\[domínio\]/bot/[\[chat id\]](#chat-id)*<br />
+*http://\[domínio\]/bot/[\[Id Web Chat\]](#chat-id)*<br />
 <br />
 ou<br />
 <br />
-*http://\[domínio\]/bot/[\[chat id\]](#chat-id)/[\[palavra-chave\]](#data-button)*<br />
+*http://\[domínio\]/bot/[\[Id Web Chat\]](#chat-id)/[\[palavra-chave\]](#data-button)*<br />
 <br />
 <br />
 
 ###### Exemplos (funcionais):
-[http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695](http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695)<br />
+[http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695](http://chat.zenvia.com/bot/85b287488b82d36ca599382fd36c2695){:target="_blank"}<br />
