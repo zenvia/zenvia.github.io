@@ -41,6 +41,8 @@ categories: docs
 ## Índice
 * [Introdução](#introdução)
 * [Glossário](#glossário)
+* [Informações de contexto disponíveis no Bot](#informações-de-contexto-disponíveis-no-bot)
+* [Informações extras enviadas para o Bot](#informações-extras-enviadas-para-o-bot)
 * [JavaScript](#javascript)
 * [Configurações](#configurações)
   * [data-embedded](#data-embedded)
@@ -111,6 +113,60 @@ inúmeras informações pra uso no Web Chat, como o nome e logo do *bot*, assim 
 O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel de controle.
 <br />
 <br />
+
+## Informações de contexto disponíveis no Bot
+Todo Web Chat Embedded, por padrão, envia informações do contexto do site onde ele está integrado, como *URL* do site, *hostname*, *path* e *query string*. Todas as informações de contexto estão agrupadas dentro da variável <code>contextData</code> e seus atributos são os seguintes:
+* **url:** URL do site onde o Web Chat está integrado.
+* **hostname:** Hostname do site onde o Web Chat está integrado.
+* **path:** Path do site onde o Web Chat está integrado.
+* **rawQueryParams:** Dado bruto dos parâmetros *query string* da página onde o Web Chat está integrado.
+* **queryParams:** Parâmetros *query string* separados em "nome do parâmetro" e "valor do parâmetro.
+* **referrer:** Agrupamento das informações referentes à página que continua o link para o site onde o Web Chat está integrado. Similar ao contextData, possui os seguintes atributos:
+  * **url:** URL do site que continua o link para o site onde o Web Chat está integrado.
+  * **hostname:** Hostname do site que continua o link para o site onde o Web Chat está integrado.
+  * **path:** Path do site que continua o link para o site onde o Web Chat está integrado.
+  * **rawQueryParams:** Dado bruto dos parâmetros *query string* do site que continua o link para o site onde o Web Chat está integrado.
+  * **queryParams:** Parâmetros *query string* separados em "nome do parâmetro" e "valor do parâmetro do site que continua o link para o site onde o Web Chat está integrado.
+
+Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e clicou no anúncio da Empresa XYZ que o Google forneceu ele será direcionado ao site da empresa. Caso ele interaja com o Chatbot integrado à essa página, a variável <code>contextData</code> poderia ser disponibilizada para uso no bot contendo uma estrutura parecida com a seguinte:
+
+```json
+{
+  "url": "https://www.empresa-xyz.com/produtos/X-Produto?utm_source=google&utm_medium=cpc&utm_campaign=google_xproduto&gclid=IsAEAIaIQobChMIyr38o_CS3QIVFoCRCh0jPwlbEAAYASAAEgKWXfD_BwE",
+  "hostname": "www.empresa-xyz.com",
+  "path": "/produtos/X-Produto",
+  "rawQueryParams": "utm_source=google&utm_medium=cpc&utm_campaign=google_xproduto&gclid=IsAEAIaIQobChMIyr38o_CS3QIVFoCRCh0jPwlbEAAYASAAEgKWXfD_BwE",
+  "queryParams": {
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "google_xproduto",
+    "gclid": "IsAEAIaIQobChMIyr38o_CS3QIVFoCRCh0jPwlbEAAYASAAEgKWXfD_BwE"
+  },
+  "referrer": {
+    "url": "https://www.google.com.br/",
+    "rawQueryParams": "",
+    "queryParams": {}
+  }
+}
+```
+Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
+* <code>#{session['contextData']['queryParams']['utm_source']}</code> retornará o valor **google**.
+* <code>#{session['contextData']['referrer']['url']}</code> retornará o valor **https://www.google.com.br/**.
+
+## Informações extras enviadas para o Bot
+É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras, basta setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
+
+```html
+...
+<script>
+  new ZenviaChat('id-do-chat-aqui')
+  .extraData({ campoA: 'valor A', campoX: 'valor de X', outroCampo: { campoInterno: "um valor qualquer" }})
+  .build();
+</script>
+...
+```
+Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é um objeto JavaScript. Para acessar os dados extras no Bot basta utilizar a diretiva <code>#{session['extraData']}</code> respeitando a hierarquia do objeto enviado, como por exemplo:
+* <code>#{session['extraData']['outroCampo']['campoInterno']}</code> retornará o conteúdo **um valor qualquer**.
 
 ## JavaScript
 Alguns métodos são disponibilizados para permitir o controle e uso do Web Chat por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
