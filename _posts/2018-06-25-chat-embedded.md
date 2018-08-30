@@ -155,7 +155,7 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
 
 Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
 * <code>#{session['contextData']['queryParams']['utm_source']}</code> retornará o valor **google**.
-* <code>#{session['contextData']['referrer']['url']}</code> retornará o valor **https://www.google.com.br/**.
+* <code>#{session['contextData']['referrer']['hostname']}</code> retornará o valor **www.google.com.br**.
 <br />
 <br />
 
