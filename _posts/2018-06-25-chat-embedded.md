@@ -144,6 +144,8 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
   },
   "referrer": {
     "url": "https://www.google.com.br/",
+    "hostname": "www.google.com.br",
+    "path": "/",
     "rawQueryParams": "",
     "queryParams": {}
   }
