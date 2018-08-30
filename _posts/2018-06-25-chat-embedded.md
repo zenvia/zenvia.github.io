@@ -155,7 +155,7 @@ Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiv
 * <code>#{session['contextData']['referrer']['url']}</code> retornará o valor **https://www.google.com.br/**.
 
 ## Informações extras enviadas para o Bot
-É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
+É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras para o bot, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
 
 ```html
 ...
