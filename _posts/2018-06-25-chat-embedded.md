@@ -149,10 +149,13 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
   }
 }
 ```
+<br />
 
 Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
 * <code>#{session['contextData']['queryParams']['utm_source']}</code> retornará o valor **google**.
 * <code>#{session['contextData']['referrer']['url']}</code> retornará o valor **https://www.google.com.br/**.
+<br />
+<br />
 
 ## Informações extras enviadas para o Bot
 É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras para o bot, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
@@ -168,9 +171,12 @@ Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiv
 </script>
 ...
 ```
+<br />
 
 Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é um objeto JavaScript. Para acessar os dados extras no Bot basta utilizar a diretiva <code>#{session['extraData']}</code> respeitando a hierarquia do objeto enviado, como por exemplo:
 * <code>#{session['extraData']['outroCampo']['campoInterno']}</code> retornará o conteúdo **um valor qualquer**.
+<br />
+<br />
 
 ## JavaScript
 Alguns métodos são disponibilizados para permitir o controle e uso do Web Chat por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
