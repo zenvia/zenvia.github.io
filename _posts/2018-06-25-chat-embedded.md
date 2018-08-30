@@ -115,7 +115,7 @@ O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel
 <br />
 
 ## Informações de contexto disponíveis no Bot
-Todo Web Chat Embedded, por padrão, envia informações do contexto do site onde ele está integrado, como *URL* do site, *hostname*, *path* e *query string*. Todas as informações de contexto estão agrupadas dentro da variável <code>contextData</code> e seus atributos são os seguintes:
+Todo Web Chat Embedded com [data-format](#data-format) configurado com *json*, por padrão, envia informações do contexto do site onde ele está integrado, como *URL* do site, *hostname*, *path* e *query string*. Todas as informações de contexto estão agrupadas dentro da variável <code>contextData</code> e seus atributos são os seguintes:
 * **url:** URL do site onde o Web Chat está integrado.
 * **hostname:** Hostname do site onde o Web Chat está integrado.
 * **path:** Path do site onde o Web Chat está integrado.
@@ -149,15 +149,18 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
   }
 }
 ```
+
 Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
 * <code>#{session['contextData']['queryParams']['utm_source']}</code> retornará o valor **google**.
 * <code>#{session['contextData']['referrer']['url']}</code> retornará o valor **https://www.google.com.br/**.
 
 ## Informações extras enviadas para o Bot
-É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras, basta setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
+É possível enviar informações extras para serem utilizadas no bot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
 
 ```html
 ...
+<div class="znv-chat" data-format="json"></div>
+<script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
 <script>
   new ZenviaChat('id-do-chat-aqui')
   .extraData({ campoA: 'valor A', campoX: 'valor de X', outroCampo: { campoInterno: "um valor qualquer" }})
@@ -165,6 +168,7 @@ Para acessar algum destes atributos diretamente no bot, basta utilizar a diretiv
 </script>
 ...
 ```
+
 Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é um objeto JavaScript. Para acessar os dados extras no Bot basta utilizar a diretiva <code>#{session['extraData']}</code> respeitando a hierarquia do objeto enviado, como por exemplo:
 * <code>#{session['extraData']['outroCampo']['campoInterno']}</code> retornará o conteúdo **um valor qualquer**.
 
