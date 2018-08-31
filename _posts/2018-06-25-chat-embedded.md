@@ -41,8 +41,8 @@ categories: docs
 ## Índice
 * [Introdução](#introdução)
 * [Glossário](#glossário)
-* [Informações de contexto disponíveis no Chatbot](#informações-de-contexto-disponíveis-no-chatbot)
-* [Informações extras enviadas para o Chatbot](#informações-extras-enviadas-para-o-chatbot)
+* [Informações de contexto disponíveis no *Chatbot*](#informações-de-contexto-disponíveis-no-chatbot)
+* [Informações extras enviadas para o *Chatbot*](#informações-extras-enviadas-para-o-chatbot)
 * [JavaScript](#javascript)
 * [Configurações](#configurações)
   * [data-embedded](#data-embedded)
@@ -106,15 +106,15 @@ Os *"componentes"* do Web Chat Embedded são:
 ![Janela do Web Chat]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
 <br id="chat-id" />
 * *Id Web Chat*<br />
-O *Id Web Chat* é o identificador da *"identidade"* do *bot*, a qual é usada pra determina
-inúmeras informações pra uso no Web Chat, como o nome e logo do *bot*, assim como qual
-*bot* será usado para executar a *conversa*.<br />
+O *Id Web Chat* é o identificador da *"identidade"* do *Chatbot*, a qual é usada pra determina
+inúmeras informações pra uso no Web Chat, como o nome e logo do *Chatbot*, assim como qual
+*Chatbot* será usado para executar a *conversa*.<br />
 <br />
 O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel de controle.
 <br />
 <br />
 
-## Informações de contexto disponíveis no Chatbot
+## Informações de contexto disponíveis no *Chatbot*
 Todo Web Chat Embedded com [data-format](#data-format) configurado com *json*, por padrão, envia informações do contexto do site onde ele está integrado, como *URL* do site, *hostname*, *path* e *query string*. Todas as informações de contexto estão agrupadas dentro da variável <code>contextData</code> e seus atributos são os seguintes:
 * **url:** URL do site onde o Web Chat está integrado.
 * **hostname:** Hostname do site onde o Web Chat está integrado.
@@ -128,7 +128,7 @@ Todo Web Chat Embedded com [data-format](#data-format) configurado com *json*, p
   * **rawQueryParams:** Dado bruto dos parâmetros *query string* do site que continua o link para o site onde o Web Chat está integrado.
   * **queryParams:** Parâmetros *query string* separados em "nome do parâmetro" e "valor do parâmetro do site que continua o link para o site onde o Web Chat está integrado.
 
-Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e clicou no anúncio da Empresa XYZ que o Google forneceu ele será direcionado ao site da empresa. Caso ele interaja com o Chatbot integrado à essa página, a variável <code>contextData</code> poderia ser disponibilizada para uso no Chatbot contendo uma estrutura parecida com a seguinte:
+Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e clicou no anúncio da Empresa XYZ que o Google forneceu ele será direcionado ao site da empresa. Caso ele interaja com o *Chatbot* integrado à essa página, a variável <code>contextData</code> poderia ser disponibilizada para uso no *Chatbot* contendo uma estrutura parecida com a seguinte:
 
 ```json
 {
@@ -153,14 +153,14 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
 ```
 <br />
 
-Para acessar algum destes atributos diretamente no Chatbot, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
+Para acessar algum destes atributos diretamente no *Chatbot*, basta utilizar a diretiva <code>#{session['contextData']}</code> respeitando a hierarquia da variável, como por exemplo:
 * <code>#{session['contextData']['queryParams']['utm_source']}</code> retornará o valor **google**.
 * <code>#{session['contextData']['referrer']['hostname']}</code> retornará o valor **www.google.com.br**.
 <br />
 <br />
 
-## Informações extras enviadas para o Chatbot
-É possível enviar informações extras para serem utilizadas no Chatbot. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras para o Chatbot, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
+## Informações extras enviadas para o *Chatbot*
+É possível enviar informações extras para serem utilizadas no *Chatbot*. Essas informações ficarão agrupadas dentro da variável <code>extraData</code>. Para enviar informações extras para o *Chatbot*, é necessário configurar o [data-format](#data-format) com *json* e setar o campo <code>extraData</code> durante a integração do Web Chat em seu site conforme mostrado abaixo:
 
 ```html
 ...
@@ -175,7 +175,7 @@ Para acessar algum destes atributos diretamente no Chatbot, basta utilizar a dir
 ```
 <br />
 
-Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é um objeto JavaScript. Para acessar os dados extras no Chatbot basta utilizar a diretiva <code>#{session['extraData']}</code> respeitando a hierarquia do objeto enviado, como por exemplo:
+Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é um objeto JavaScript. Para acessar os dados extras no *Chatbot* basta utilizar a diretiva <code>#{session['extraData']}</code> respeitando a hierarquia do objeto enviado, como por exemplo:
 * <code>#{session['extraData']['outroCampo']['campoInterno']}</code> retornará o conteúdo **um valor qualquer**.
 <br />
 <br />
@@ -198,7 +198,7 @@ Existem algumas configurações que podem ser realizadas através de atributos d
 * [data-embedded](#data-embedded): tipo do Web Chat embedded.
 * [data-button](#data-button): texto do botão de iniciar o chat.
 * [data-message](#data-message): mensagem em um balão convidando a iniciar o chat.
-* [data-format](#data-format): formato da mensagem usada pra iniciar um Chatbot.
+* [data-format](#data-format): formato da mensagem usada pra iniciar um *Chatbot*.
 * [data-color](#data-color): altera a cor do [botão flutuante](#botão-flutuante).
 * [data-width](#data-width): altera a largura da [janela do Web Chat](#janela-do-web-chat).
 * [data-height](#data-height): altera a altura da [janela do Web Chat](#janela-do-web-chat).
@@ -310,7 +310,7 @@ As opções são:
 <br id="data-button"/>
 ### data-button
 Controla o texto a ser exibido quando uma [data-message](#data-message) é definida ou quando [data-embedded](#data-embedded) é do tipo *button+keyword*, e o conteúdo da
-mensagem que é gerada para iniciar o *bot* caso a sala do chat não esteja ainda
+mensagem que é gerada para iniciar o *Chatbot* caso a sala do chat não esteja ainda
 inicializada.
 
 O valor padrão é: *Começar*
@@ -360,7 +360,7 @@ Define o formato da mensagem que *pode* ser gerada quando o [botão de início](
 
 Os formatos disponíveis são:
 * *text*: A mensagem inicial fica visível na conversa
-* *json*: A mensagem inicial não fica visível na conversa, e ainda permite o envio de informações adicionais ao *bot*.
+* *json*: A mensagem inicial não fica visível na conversa, e ainda permite o envio de informações adicionais ao *Chatbot*.
 
 O valor padrão é *json*, exceto quando o [data-embedded](#data-embedded) é configurado como *button+keyword*.
 <br />
@@ -412,7 +412,7 @@ Mas também é possível utilizar algum outro identificador, como por exemplo, u
 
 ## Integrações alternativas
 ### Link/URL
-São URLs que quando acessadas, iniciam o *bot* identificado pelo [Id Web Chat](#chat-id) utilizado em sua composição.
+São URLs que quando acessadas, iniciam o *Chatbot* identificado pelo [Id Web Chat](#chat-id) utilizado em sua composição.
 
 Podem ser utilizados em diversos cenários, sendo portanto, bem flexível.
 <br />
@@ -427,7 +427,7 @@ Seguem algumas delas com suporte a *https*:
 <br />
 
 ###### Composição:
-O URL de redirecionamento a um *bot* possui o seguinte formato:<br />
+O URL de redirecionamento a um *Chatbot* possui o seguinte formato:<br />
 *http://\[domínio\]/bot/[\[Id Web Chat\]](#chat-id)*<br />
 <br />
 ou<br />
