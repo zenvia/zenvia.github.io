@@ -106,8 +106,8 @@ Os *"componentes"* do Web Chat Embedded são:
 ![Janela do Web Chat]({{ '/assets/img/chat-embedded/janela.png' | absolute_url }})
 <br id="chat-id" />
 * *Id Web Chat*<br />
-O *Id Web Chat* é o identificador da *"identidade"* do *Chatbot*, a qual é usada pra determina
-inúmeras informações pra uso no Web Chat, como o nome e logo do *Chatbot*, assim como qual
+O *Id Web Chat* é o identificador da *"identidade"* do *Chatbot*, a qual é usada para determinar
+inúmeras informações para uso no Web Chat, como o nome e logo do *Chatbot*, assim como qual
 *Chatbot* será usado para executar a *conversa*.<br />
 <br />
 O *Id Web Chat* pode ser obtido na lista de integrações, disponível no painel de controle.
@@ -183,7 +183,7 @@ Vale salientar que o campo **extraData** pode assumir qualquer estrutura pois é
 ## JavaScript
 Alguns métodos são disponibilizados para permitir o controle e uso do Web Chat por elementos do site, tornando o uso do [botão flutuante](#botão-flutuante) opcional.
 
-Os seguintes métodos estão disponível pra uso:
+Os seguintes métodos estão disponível para uso:
 * *open()*: abre a [janela do Web Chat](#janela-do-web-chat).
 * *close()*: fecha a [janela do Web Chat](#janela-do-web-chat).
 * *toggle()*: abre ou fecha a [janela do Web Chat](#janela-do-web-chat) de acordo com seu estado atual.
@@ -198,7 +198,7 @@ Existem algumas configurações que podem ser realizadas através de atributos d
 * [data-embedded](#data-embedded): tipo do Web Chat embedded.
 * [data-button](#data-button): texto do botão de iniciar o chat.
 * [data-message](#data-message): mensagem em um balão convidando a iniciar o chat.
-* [data-format](#data-format): formato da mensagem usada pra iniciar um *Chatbot*.
+* [data-format](#data-format): formato da mensagem usada para iniciar um *Chatbot*.
 * [data-color](#data-color): altera a cor do [botão flutuante](#botão-flutuante).
 * [data-width](#data-width): altera a largura da [janela do Web Chat](#janela-do-web-chat).
 * [data-height](#data-height): altera a altura da [janela do Web Chat](#janela-do-web-chat).
@@ -332,7 +332,7 @@ O valor padrão é: *Começar*
 <br />
 
 ### data-message
-Define uma [mensagem de boas-vindas](#mensagem-de-boas-vindas) pra ser exibida em um balão
+Define uma [mensagem de boas-vindas](#mensagem-de-boas-vindas) para ser exibida em um balão
 acima do [botão flutuante](#botão-flutuante).
 
 Quando utilizada, o balão é carregado já aberto quando o site carrega.
