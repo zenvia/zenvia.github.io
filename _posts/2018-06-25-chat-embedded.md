@@ -389,7 +389,7 @@ O valor padrão é: *#333*.
 ### data-width
 Define a *largura* da [janela flutuante](#janela-do-web-chat) do Web Chat.
 
-O valor padrão é: *375px*, exceto quando [data-embedded](#data-embedded) é configurado como *room*, aí o valor padrão passa a ser *100%*.
+O valor padrão é: *400px*, exceto quando [data-embedded](#data-embedded) é configurado como *room*, aí o valor padrão passa a ser *100%*.
 <br />
 
 ### data-height
