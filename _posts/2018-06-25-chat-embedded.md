@@ -128,7 +128,7 @@ Todo Web Chat Embedded com [data-format](#data-format) configurado com *json*, p
   * **rawQueryParams:** Dado bruto dos parâmetros *query string* do site que continua o link para o site onde o Web Chat está integrado.
   * **queryParams:** Parâmetros *query string* separados em "nome do parâmetro" e "valor do parâmetro do site que continua o link para o site onde o Web Chat está integrado.
 
-Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e clicou no anúncio da Empresa XYZ que o Google forneceu ele será direcionado ao site da empresa. Caso ele interaja com o *Chatbot* integrado à essa página, a variável <code>contextData</code> poderia ser disponibilizada para uso no *Chatbot* contendo uma estrutura parecida com a seguinte:
+Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e clicou no anúncio da Empresa XYZ que o Google forneceu ele será direcionado ao site da empresa. Caso ele interaja com o *Chatbot* integrado à essa página, a variável <code>contextData</code> seria disponibilizada para uso no *Chatbot* contendo uma estrutura parecida com a seguinte:
 
 ```json
 {
