@@ -153,8 +153,8 @@ Se, por exemplo, um usuário entrou no Google, pesquisou por "Empresa XYZ" e cli
 <br />
 
 Para acessar algum destes atributos diretamente no *Chatbot*, basta utilizar a diretiva <code>#{session['website']}</code> respeitando a hierarquia da variável, como por exemplo:
-* <code>#{session['website']['queryParams']['utm_source']}</code> retornará o valor **google**.
-* <code>#{session['website']['referrer']['hostname']}</code> retornará o valor **www.google.com.br**.
+* <code>#{session['website']['queryParams']['utm_source']}</code> ou somente <code>#{website.queryParams.utm_source}</code> retornará o valor **google**.
+* <code>#{session['website']['referrer']['hostname']}</code> ou <code>#{website.referrer.hostname}</code> retornará o valor **www.google.com.br**.
 <br />
 <br />
 
