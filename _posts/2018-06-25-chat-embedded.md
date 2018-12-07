@@ -185,6 +185,7 @@ Os seguintes métodos estão disponível para uso:
 * *open()*: abre a [janela do Web Chat](#janela-do-web-chat).
 * *close()*: fecha a [janela do Web Chat](#janela-do-web-chat).
 * *toggle()*: abre ou fecha a [janela do Web Chat](#janela-do-web-chat) de acordo com seu estado atual.
+* *destroy()*: fecha (caso aberta) a [janela do Web Chat](#janela-do-web-chat) e remove da página todos os elementos criados pelo Web Chat.
 <br />
 
 Um exemplo de uso pode ser visto em [data-embedded="buttonless"](#buttonless).
