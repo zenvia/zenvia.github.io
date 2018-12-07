@@ -16,13 +16,14 @@
     <section class="hero is-white">
       <div class="hero-body">
         <div class="container">
-          <!-- Inserindo a janela do chat na página -->
-          <div class="znv-chat"
-            data-embedded="room"
-            data-width="500px"
-            data-height="500px"
-            style="float: right; margin-left: 10px; border: 5px solid black;"
-          ></div>
+          <!-- ELEMENTO HTML ONDE A JANELA DO CHAT SERÁ INSERIDA -->
+          <div id="elemento-html" style="
+              width: 500px;
+              height: 500px;
+              float: right;
+              margin-left: 10px;
+              border: 5px solid black;">
+          </div>
           <!-- Conteúdo da página -->
           <h3 class="title is-4">Sobre nós</h3>
           <div class="content">
@@ -36,7 +37,9 @@
     <!-- Início do código do chat -->
     <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
     <script>
-        new ZenviaChat('85b287488b82d36ca599382fd36c2695', false).build();
+        new ZenviaChat('85b287488b82d36ca599382fd36c2695', false)
+          .embedded('room')
+          .build('elemento-html');
     </script>
     <!-- Fim do código do chat -->
   </body>
