@@ -68,7 +68,7 @@ O cabeçalho ou header do Chatweb pode ser modificado das seguintes formas:
   background: #32bbed !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 <br />
 
@@ -83,7 +83,7 @@ Resultado esperado abaixo:
   display: none !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -102,7 +102,7 @@ body{
   background-color: #f2ffe6 !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -117,7 +117,7 @@ body{
   background-image: url(https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg)  !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -136,7 +136,7 @@ Os balões da conversa, assim como a sua fonte podem ser modificados das seguint
   font-size: 17px !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -151,7 +151,7 @@ Resultado esperado abaixo:
   color: #7d1e78 !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -166,7 +166,7 @@ Resultado esperado abaixo:
   color: #32bbed !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -181,7 +181,7 @@ Resultado esperado abaixo:
   background-color: #32bbed !important;
 }
 ```
-
+<br />
 Resultado esperado abaixo:
 
 <br />
@@ -196,8 +196,7 @@ Resultado esperado abaixo:
   background-color: #32bbed !important;
 }
 ```
-
-
+<br />
 Resultado esperado abaixo:
 
 <br />
