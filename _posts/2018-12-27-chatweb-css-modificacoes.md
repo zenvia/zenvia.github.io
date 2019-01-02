@@ -195,6 +195,38 @@ Resultado esperado abaixo:
 
 <br />
 
+## Campo de digitação do usuário e ações
+
+O campo de digitação do usuário pode ser modificado das seguintes formas: 
+
+* Podemos remover o clip de upload de arquivo, caso isso não seja útil na sua regra de negócio, com o seguinte código CSS:
+
+```css
+.chat-footer form .clip.enabled {
+   display: none !important;
+}
+```
+<br />
+Resultado esperado abaixo:
+
+![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/remove-upload.png' | absolute_url }})
+
+<br />
+
+* Podemos também remover o campo de digitação, com o seguinte código CSS:
+
+```css
+.chat-footer {
+   display: none !important;
+}
+```
+<br />
+Resultado esperado abaixo:
+
+![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/remover-digitacao.png' | absolute_url }})
+
+<br />
+
 **Observação:**
 
 * O nome das classes CSS devem ser exatamente como escritas nessa documentação, assim como o uso do !important em alguns casos, senão o seu código não irá substituir o original do Chatweb e a modificação *não será feita*.
