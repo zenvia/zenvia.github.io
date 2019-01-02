@@ -44,6 +44,7 @@ categories: docs
 * [Fundo da Conversa](#fundo-da-conversa)
 * [Balões da Conversa](#balões-da-conversa)
 * [Campo de digitação do usuário e ações](#campo-de-digitação-do-usuário-e-ações)
+
 <br />
 
 ## Aonde modificar?
@@ -69,6 +70,7 @@ O cabeçalho ou header do Chatweb pode ser modificado das seguintes formas:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 
 ![Alteração cor Header]({{ '/assets/img/chatweb-modificacoes-css/cor-fundo-header.png' | absolute_url }})
@@ -84,6 +86,7 @@ Resultado esperado abaixo:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Remoção Header]({{ '/assets/img/chatweb-modificacoes-css/remove-header.png' | absolute_url }})
 
@@ -102,6 +105,7 @@ body{
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/cor-fundo-body.png' | absolute_url }})
 
@@ -116,6 +120,7 @@ body{
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração imagem Body]({{ '/assets/img/chatweb-modificacoes-css/imagem-fundo-body.png' | absolute_url }})
 
@@ -134,6 +139,7 @@ Os balões da conversa, assim como a sua fonte podem ser modificados das seguint
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/tamanho-fonte.png' | absolute_url }})
 
@@ -148,6 +154,7 @@ Resultado esperado abaixo:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-fonte.png' | absolute_url }})
 
@@ -162,6 +169,7 @@ Resultado esperado abaixo:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-fonte-usuario.png' | absolute_url }})
 
@@ -176,6 +184,7 @@ Resultado esperado abaixo:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-balao-bot.png' | absolute_url }})
 
@@ -190,6 +199,7 @@ Resultado esperado abaixo:
 ```
 <br />
 Resultado esperado abaixo:
+
 <br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-balao-usuario.png' | absolute_url }})
 
