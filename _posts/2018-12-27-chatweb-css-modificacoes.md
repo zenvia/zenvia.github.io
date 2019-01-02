@@ -71,8 +71,6 @@ O cabeçalho ou header do Chatweb pode ser modificado das seguintes formas:
 <br />
 Resultado esperado abaixo:
 
-<br />
-
 ![Alteração cor Header]({{ '/assets/img/chatweb-modificacoes-css/cor-fundo-header.png' | absolute_url }})
 
 <br />
