@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Modificações possíveis de Estilo no Chatweb
+title: Possíveis modificações de Estilo no Chatweb
 description: 
 categories: docs
 ---
@@ -63,22 +63,26 @@ O cabeçalho ou header do Chatweb pode ser modificado das seguintes formas:
 
 * Podemos modificar a cor de fundo do cabeçalho, ou seja a cor que fica de fundo do logo, com o seguinte código CSS:
 
-.chat-header {
+.chat-header { <br />
   background: ##32bbed !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração cor Header]({{ '/assets/img/chatweb-modificacoes-css/cor-fundo-header.png' | absolute_url }})
 
 <br />
 
 * Podemos também remover o cabeçalho, se você não quiser que apareça o logo e nem o espaço destinado a ele, com o seguinte código CSS:
 
-.chat-header{
+.chat-header{<br />
   display: none !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Remoção Header]({{ '/assets/img/chatweb-modificacoes-css/remove-header.png' | absolute_url }})
 
 <br />
@@ -89,22 +93,26 @@ O fundo ou background da conversa do Chatweb pode ser modificado das seguintes f
 
 * Podemos modificar a cor de fundo da conversa, com o seguinte código CSS:
 
-body{
+body{<br />
   background-color: #f2ffe6 !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/cor-fundo-body.png' | absolute_url }})
 
 <br />
 
 * Podemos modificar o fundo inserindo uma imagem, para tanto, você precisará do link da imagem, utilizamos o seguinte código CSS:
 
-body{
+body{<br />
   background-image: url(https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg)  !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração imagem Body]({{ '/assets/img/chatweb-modificacoes-css/imagem-fundo-body.png' | absolute_url }})
 
 <br />
@@ -115,57 +123,67 @@ Os balões da conversa, assim como a sua fonte podem ser modificados das seguint
 
 * Podemos modificar o tamanho da fonte, com o seguinte código CSS:
 
-.message-thread .message {
+.message-thread .message {<br />
   font-size: 17px !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/tamanho-fonte.png' | absolute_url }})
 
 <br />
 
 * Podemos modificar a cor da fonte do balão do seu bot, com o seguinte código CSS:
 
-.message-received .message-content {
+.message-received .message-content {<br />
   color: #7d1e78 !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-fonte.png' | absolute_url }})
 
 <br />
 
 * Podemos modificar a cor da fonte do balão da resposta do usuário, com o seguinte código CSS:
 
-.message-sent .message-content {
+.message-sent .message-content {<br />
   color: #32bbed !important;
+  <br />
 }
 
 Resultado esperado abaixo:
+<br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-fonte-usuario.png' | absolute_url }})
 
 <br />
 
 * Podemos modificar a cor do balão do seu bot, com o seguinte código CSS:
 
-.message-received .message-content {
+.message-received .message-content {<br />
   background-color: #32bbed !important;
+  <br />
 }
 
 
 Resultado esperado abaixo:
+<br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-balao-bot.png' | absolute_url }})
 
 <br />
 
 * Podemos modificar a cor do balão da resposta do usuário, com o seguinte código CSS:
 
-.message-sent .message-content {
+.message-sent .message-content {<br />
   background-color: #32bbed !important;
+  <br />
 }
 
 
 Resultado esperado abaixo:
+<br />
 ![Alteração tamanho fonte]({{ '/assets/img/chatweb-modificacoes-css/cor-balao-usuario.png' | absolute_url }})
 
 <br />
