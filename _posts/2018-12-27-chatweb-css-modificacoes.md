@@ -219,11 +219,19 @@ Resultado esperado abaixo:
 .chat-footer {
    display: none !important;
 }
+
+.message-thread {
+  margin-bottom: 0px;
+}
+
+.message-thread-wrapper { 
+  min-height: calc(100vh - 22px);
+}
 ```
 <br />
 Resultado esperado abaixo:
 
-![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/remover-digitacao.png' | absolute_url }})
+![Alteração cor Body]({{ '/assets/img/chatweb-modificacoes-css/remove-campo-digitacao.png' | absolute_url }})
 
 <br />
 
