@@ -47,7 +47,7 @@ categories: docs
 
 <br />
 
-## Aonde modificar?
+## Onde modificar?
 
 Entendemos que nem sempre o design do Chatweb satisfaz as necessidades dos clientes, seja por regra de negócio ou por estética. Para tanto, temos o campo *Editor de CSS*, na tela de criação da sala do Chatweb, que cumpre a missão de executar modificações mais avançadas, além daquelas propostas na criação do Chatweb como cor, avatar e logo.
 
