@@ -39,7 +39,7 @@ categories: docs
 </style>
 
 ## Índice
-* [Aonde modificar?](#aonde-modificar)
+* [Onde modificar?](#aonde-modificar)
 * [Cabeçalho](#cabeçalho)
 * [Fundo da Conversa](#fundo-da-conversa)
 * [Balões da Conversa](#balões-da-conversa)
