@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Modificações possíveis de Estilo no Chatweb
+title: Modificações possíveis de estilo no Web Chat
 description: 
 categories: docs
 ---
@@ -49,7 +49,7 @@ categories: docs
 
 ## Onde modificar?
 
-Entendemos que nem sempre o design do Chatweb satisfaz as necessidades dos clientes, seja por regra de negócio ou por estética. Para tanto, temos o campo *Editor de CSS*, na tela de criação da sala do Chatweb, que cumpre a missão de executar modificações mais avançadas, além daquelas propostas na criação do Chatweb como cor, avatar e logo.
+Entendemos que nem sempre o design do Web Chat satisfaz as necessidades dos clientes, seja por regra de negócio ou por estética. Para tanto, temos o campo *Editor de CSS*, na tela de criação da sala do Web Chat, que cumpre a missão de executar modificações mais avançadas, além daquelas propostas na criação do Web Chat como cor, avatar e logo.
 
 Estas modificações avançadas que iremos ver nessa documentação, o editor está localizado logo depois do campo de escolha do avatar, você deve clicar na seta para expandi-lo, como o exemplo a seguir:
 
@@ -59,7 +59,7 @@ Estas modificações avançadas que iremos ver nessa documentação, o editor es
 
 ## Cabeçalho
 
-O cabeçalho ou header do Chatweb pode ser modificado das seguintes formas: 
+O cabeçalho ou header do Web Chat pode ser modificado das seguintes formas: 
 
 * Podemos modificar a cor de fundo do cabeçalho, ou seja a cor que fica de fundo do logo, com o seguinte código CSS:
 
@@ -91,7 +91,7 @@ Resultado esperado abaixo:
 
 ## Fundo da Conversa
 
-O fundo ou background da conversa do Chatweb pode ser modificado das seguintes formas: 
+O fundo ou background da conversa do Web Chat pode ser modificado das seguintes formas: 
 
 * Podemos modificar a cor de fundo da conversa, com o seguinte código CSS:
 
@@ -237,4 +237,4 @@ Resultado esperado abaixo:
 
 **Observação:**
 
-* O nome das classes CSS devem ser exatamente como escritas nessa documentação, assim como o uso do !important em alguns casos, senão o seu código não irá substituir o original do Chatweb e a modificação *não será feita*.
+* O nome das classes CSS devem ser exatamente como escritas nessa documentação, assim como o uso do !important em alguns casos, senão o seu código não irá substituir o original do Web Chat e a modificação *não será feita*.
