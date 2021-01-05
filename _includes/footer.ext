@@ -10,12 +10,6 @@
             Av. Paulista, 2300 - 18º andar - conj. 182 e 184
             Bela Vista - 01310-300
         </address>
-
-        <address class="text-small">
-          Porto Alegre
-          Av. Dr. Nilo Peçanha, 2900 - 14º andar
-          Chácara da Pedras - 91330-001
-        </address>
       </p>
       <p>
           {% if site.social.github %}
