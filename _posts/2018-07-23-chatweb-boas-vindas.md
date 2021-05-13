@@ -2,7 +2,7 @@
 layout: documentation
 title: Mensagem de boas vindas no Chatweb
 description: 
-categories: docs
+categories: webchat
 ---
 
 <style>
