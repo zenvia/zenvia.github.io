@@ -2,7 +2,7 @@
 layout: documentation
 title: Integrando o Web Chat em seu site
 description: 
-categories: docs
+categories: webchat
 ---
 
 <style>

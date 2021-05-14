@@ -4,9 +4,8 @@ title: Índice
 description: 
 categories:
 comments: false
-permalink: docs
+permalink: webchat
 ---
-
 <ul>
   {% for post in site.posts reversed %}
     {% if post.title != 'Índice' %}

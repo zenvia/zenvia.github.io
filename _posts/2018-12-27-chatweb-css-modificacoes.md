@@ -2,7 +2,7 @@
 layout: documentation
 title: Modificações possíveis de estilo no Web Chat
 description: 
-categories: docs
+categories: webchat
 ---
 
 <style>
